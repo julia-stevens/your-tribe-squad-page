@@ -32,7 +32,7 @@ Het Team Canvas invullen.
 
 2. Begin met invullen van het individuele deel -
 
-Stel **persoonlijke doelen** op (GOALS): Dit kan gaan om over kennis (je wilt iets leren), vaardigheden (je wilt iets kunnen) of houding/gedrag (je wilt iets doen). Geef jouw verwachtingen aan. Wil je 3x per week een standup? Wil je in de SAR werken? Wil je thuis werken? Waar ben jij bij gebaat.. In welke omstandigheid werk jij het prettigst?
+Stel **persoonlijke doelen** op (GOALS): Dit kan gaan om over kennis (je wilt iets leren), vaardigheden (je wilt iets kunnen) of houding/gedrag (je wilt iets doen). Geef jouw verwachtingen aan. Wil je 3x per week een standup? Wil je op de HvA werken? Wil je thuis werken? Waar ben jij bij gebaat.. In welke omstandigheid werk jij het prettigst?
 
 2. Bespreek in je team wat de teamleden bij persoonlijke doelen hebben opgeschreven.
 
@@ -51,7 +51,6 @@ Stel **persoonlijke doelen** op (GOALS): Dit kan gaan om over kennis (je wilt ie
 
 ##### Bronnen
 
-- [The Team Canvas (engels)](http://theteamcanvas.com/learn/)
 - [Pro-tip: Een lijst met kernwaarden](https://www.desteven.nl/leiderschapsontwikkeling/modern-leiderschap/kernwaarden)
 - [Miro Board voor deze opdracht](https://miro.com/app/board/uXjVKh1tR08=/)
 
