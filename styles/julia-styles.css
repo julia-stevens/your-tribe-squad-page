@@ -135,7 +135,7 @@ main input {
     width: 75%;
     margin-top: 1em;
 
-    background-image: url('/assets/julia/svg-icons/search.svg');
+    background-image: url('./assets/julia/svg-icons/search.svg');
     background-repeat: no-repeat;
     background-position: right 1em bottom 1.2em;
     backdrop-filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
@@ -264,7 +264,7 @@ li > p:nth-of-type(1) {
     padding: .1em 1em .1em 2em;
     border-radius: 2em;
 
-    background-image: url('/assets/julia/svg-icons/student.svg');
+    background-image: url('./assets/julia/svg-icons/student.svg');
     background-repeat: no-repeat;
     background-position: left .5em bottom .1em;
     backdrop-filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
@@ -282,7 +282,7 @@ li > p:nth-of-type(2) {
     padding: .1em 1em .1em 2.2em;
     border-radius: 2em;
 
-    background-image: url('/assets/julia/svg-icons/map.svg');
+    background-image: url('./assets/julia/svg-icons/map.svg');
     background-repeat: no-repeat;
     background-position: left .5em bottom .1em;
     backdrop-filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
@@ -462,7 +462,7 @@ footer p {
     border-radius: 2em;
     background-color: var(--bright-green);
 
-    background-image: url('/assets/julia/svg-icons/map.svg');
+    background-image: url('./assets/julia/svg-icons/map.svg');
     background-repeat: no-repeat;
     background-position: left .5em bottom .2em;
     backdrop-filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
