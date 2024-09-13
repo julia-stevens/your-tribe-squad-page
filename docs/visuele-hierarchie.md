@@ -2,9 +2,9 @@
 
 ## Visuele Hiërarchie
 
-Visuele hiërarchie toepassen in een Figma design, varieren en dupliceren...
+Visuele hiërarchie toepassen in je ontwerp en met je team ideeën uitwerken in Figma
 
-_In de workshop S01W3-01-Visuele-hierarchie wordt uitgelegd wat je moet doen._
+_In de workshop S01W3-01-Visuele-hierarchie wordt uitgelegd wat visuele hiërarchie is, hoe je dit kan toepassen in je ontwerp en hoe je met Figma kan werken._
 
 
 <!-- Uitleg opdracht, aanpak per fases van de DLC en bronnen. -->
