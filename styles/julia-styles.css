@@ -1,3 +1,4 @@
+/* Main colors */
 :root {
     --dark-blue: #020242;
     --bright-green: #67E5BF;
@@ -16,6 +17,7 @@ body {
     background-color: var(--main-white);
 }
 
+/* Navigatie balk die opdezelfde plek blijft staan + grid */
 nav {
     background-color: var(--dark-blue);
     border-radius: .5em;
@@ -31,6 +33,7 @@ nav {
     z-index: 2;
 }
 
+/* Logo */
 nav a:first-of-type {
     grid-column: 1;
 
@@ -38,11 +41,13 @@ nav a:first-of-type {
     justify-self: center;
 }
 
+/* Logo afmetingen van afbeelding */
 nav a:first-of-type img {
     width: 3em;
     filter: invert(77%) sepia(82%) saturate(281%) hue-rotate(98deg) brightness(97%) contrast(85%);
 }
 
+/* Vormgeving link studenten en campus */
 nav a:nth-of-type(2),
 a:nth-of-type(3) {
     text-decoration: none;
@@ -54,6 +59,7 @@ a:nth-of-type(3) {
     height: 80%;
 }
 
+/* Afmeting link studenten en campus */
 nav a:nth-of-type(2) img,
 a:nth-of-type(3) img {
     filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
@@ -61,6 +67,7 @@ a:nth-of-type(3) img {
     margin-right: .5em;
 }
 
+/* Vormgeving link studenten */
 nav a:nth-of-type(2) {
     background-color: var(--bright-green);
     border-radius: .75em;
@@ -75,6 +82,7 @@ nav a:nth-of-type(2) {
     text-align: center;
 }
 
+/* Vormgeving link campus */
 nav a:nth-of-type(3) {
     background-color: var(--pink-purple);
     border-radius: .75em;
@@ -89,7 +97,7 @@ nav a:nth-of-type(3) {
     text-align: center;
 }
 
-
+/* Vormgeving en positionering header */
 header {
     text-align: center;
     line-height: 2em;
@@ -120,6 +128,7 @@ header img {
     margin-top: -3em;
 }
 
+/* Achtergrond kleur en positionering element met alle cards van studenten */
 main {
     background-color: var(--dark-blue);
     border-radius: .5em;
@@ -129,6 +138,7 @@ main {
     text-align: center;
 }
 
+/* Vormgeving en positionering zoek balk  */
 main input {
     background-color: var(--bright-green);
     border-style: none;
@@ -144,10 +154,12 @@ main input {
     background-size: 1.5em;
 }
 
+/* Kleur tekst zoekbalk */
 input::placeholder {
     color: var(--dark-blue);
 }
 
+/* Grid met alle cards */
 ul {
     margin: 0;
     padding: 0;
@@ -163,6 +175,7 @@ ul {
     row-gap: 2em;
 }
 
+/* Vormgeving en positionering van een card met grid */
 li {
     font-size: 4px;
     /* 1em is nu ...px */
@@ -179,7 +192,6 @@ li {
     align-self: center;
 
     position: relative;
-
 }
 
 li {
@@ -190,6 +202,7 @@ li {
     font-size: 5px;
 }
 
+/* Naam in card */
 li>h3 {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
@@ -209,6 +222,7 @@ li>h3 {
 
 }
 
+/* Afbeelding in card */
 li>img {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
@@ -222,6 +236,7 @@ li>img {
     border-radius: .5em;
 }
 
+/* Positionering in grid van leeftijd, plaats en motto */
 li>p {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
@@ -229,6 +244,7 @@ li>p {
     font-size: 1em;
 }
 
+/* Vormgeving van afbeeldingen van pijl */
 li>a>img {
     margin: 0;
 
@@ -236,6 +252,7 @@ li>a>img {
     width: 1.3em;
 }
 
+/* Vormgeving en positionering van leeftijd en plaats */
 li>a {
     grid-column: 2/3;
     grid-row: 3/4;
@@ -256,8 +273,7 @@ li>a {
     text-align: center
 }
 
-
-
+/* Vormgeving leeftijd + icoon */
 li>p:nth-of-type(1) {
     background-color: var(--bright-green);
 
@@ -276,6 +292,7 @@ li>p:nth-of-type(1) {
     translate: 15% -130%;
 }
 
+/* Vormgeving plaats + icoon */
 li>p:nth-of-type(2) {
     background-color: var(--bright-green);
 
@@ -294,6 +311,7 @@ li>p:nth-of-type(2) {
     translate: -15% -130%;
 }
 
+/* Vormgeving en positionering pijl */
 li>p:nth-of-type(3) {
     color: var(--bright-green);
 
@@ -306,6 +324,7 @@ li>p:nth-of-type(3) {
     margin: 2em 0em 2em 0em;
 }
 
+/* Border rondom card */
 li::before {
     content: "";
 
@@ -320,6 +339,7 @@ li::before {
     height: 100%;
 }
 
+/* Vormgeving en positionering footer + elementen, dit wordt gedaan met een grid */
 footer {
     background-color: var(--dark-blue);
     border-radius: .5em;
@@ -403,6 +423,7 @@ footer p {
 
 }
 
+/* Vormgeving en positionering campus elementen */
 .main-article h3 {
     font-weight: 300;
     text-transform: uppercase;
@@ -435,6 +456,7 @@ footer p {
 
 }
 
+/* Vormgeving en positionering campus card met een grid */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
@@ -446,7 +468,7 @@ footer p {
     margin-bottom: 2em;
 }
 
-
+/* Grid met micro lay-out van een campus card */
 .main-article article {
     display: grid;
     grid-template-columns: 2em 20em 2em;
@@ -457,6 +479,7 @@ footer p {
     margin-top: -2em;
 }
 
+/* adres */
 .main-article article>p:nth-of-type(1) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -480,6 +503,7 @@ footer p {
 
 }
 
+/* afbeelding */
 .main-article article>img {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
@@ -495,6 +519,7 @@ footer p {
     z-index: -1;
 }
 
+/* pijl naar links */
 .main-article article>a:nth-of-type(1) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -511,12 +536,14 @@ footer p {
 
 }
 
+/* afbeeldingen van pijlen kleur aangepast */
 .main-article article>a img {
     margin: 0;
 
     filter: invert(77%) sepia(82%) saturate(281%) hue-rotate(98deg) brightness(97%) contrast(85%);
 }
 
+/* pijl naar rechts */
 .main-article article>a:nth-of-type(2) {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
@@ -529,10 +556,9 @@ footer p {
     justify-self: end;
 
     translate: 50% 100%;
-
-
 }
 
+/* naam van plaats op campus */
 .main-article article>h4 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -542,6 +568,7 @@ footer p {
 
 }
 
+/* tekst met uitleg over campus plek */
 .main-article article>p:nth-of-type(2) {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
@@ -557,6 +584,7 @@ footer p {
 
 }
 
+/* pijl naar rechts met link */
 .main-article article>a:nth-of-type(3) {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
@@ -573,12 +601,14 @@ footer p {
     translate: -50% -25%;
 }
 
+/* afbeelding van pijl naar rechts */
 .main-article article>a:nth-of-type(3) img {
     margin: 0;
 
     filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
 }
 
+/* gekleurde border rondom tekst en titel */
 .main-article article::before {
     content: "";
 
@@ -594,6 +624,7 @@ footer p {
     border-color: var(--bright-green);
 }
 
+/* media queries */
 @media screen and (min-width: 200px) {
     * {
         font-size: 10px;
@@ -653,7 +684,6 @@ footer p {
         font-size: 16px;
     }
 }
-
 
 @media screen and (min-width: 200px) {
     .main-article article {
