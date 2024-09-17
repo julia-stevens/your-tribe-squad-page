@@ -1,17 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>squadpages groep de eendtjes</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
+    <!-- Navigatie met 2 links naar een pagina -->
+    <nav>
+        <a href="julia.html"><img src="./assets/julia/hva-logo.png" alt="logo van hva"></a>
+        <a href="julia.html"><img src="./assets/julia/svg-icons/studenten.svg"
+                alt="icoon van groep studenten">Studenten</a>
+        <a href="#"><img src="./assets/julia/svg-icons/campus.svg" alt="icoon van school gebouw">Campus</a>
+    </nav>
+    <!-- Header met titel, ondertitel, uitleg een een afbeelding -->
+    <header>
+        <h3>Frontend Design & Development</h3>
+        <h1>Squad 1G</h1>
+        <p>Welkom bij de pagina van squad 1G! Op deze pagina leer je de studenten en de campus beter kennen. Klik op een
+            student om het gemaakte visitekaartje te bekijken of kijk rond op onze campus!</p>
+        <img src="./assets/julia/squad-image.png"
+            alt="vector illustratie van een groep die les krijgt en achter hun laptop zit">
+    </header>
+ <!-- Main met filter (= input) en een lijst met alle cards van de studenten -->
+ <main>
+     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Zoek een student" title="Type in a name">
 
-    <!-- DE REST -->
+     <ul id="myUL">
+         <!-- card amber -->
+         <li class="student-card border-card">
+             <h3>Amber</h3>
+             <img src="./assets/julia/amber-picture.JPG" alt="afbeelding van amber">
+             <p>21 jaar</p>
+             <p>Nieuwgein</p>
+             <p>Hier het motto van Amber</p>
+             <a href="https://ambersr.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
 
+         <!-- card athene -->
+         <li class="student-card border-card">
+             <h3>Athene</h3>
+             <img src="./assets/julia/athene-picture.JPG" alt="afbeelding van athene">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Athene</p>
+             <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card branco -->
+         <li class="student-card border-card">
+             <h3>Branco</h3>
+             <img src="./assets//julia/branco-picture.jpeg" alt="afbeelding van branco">
+             <p>18 jaar</p>
+             <p>Volendam</p>
+             <p>Hier het motto van Branco</p>
+             <a href="https://brancovanbeek.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card cedrik -->
+         <li class="student-card border-card">
+             <h3>Cedrik</h3>
+             <img src="./assets//julia/cedrik-picture.avif" alt="afbeelding van cedrik">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Cedrik</p>
+             <a href="https://cedrikstephen.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card christian -->
+         <li class="student-card border-card">
+             <h3>Christian</h3>
+             <img src="./assets//julia/christian-picture.jpeg" alt="afbeelding van christian">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Christian</p>
+             <a href="https://osaoni.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card clarice -->
+         <li class="student-card border-card">
+             <h3>Clarice</h3>
+             <img src="./assets//julia/ananymous-picture.jpg" alt="afbeelding van clarice">
+             <p>20 jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Clarice</p>
+             <a href="https://clarice-cod.github.io/visitekaartje-clarice/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card colin -->
+         <li class="student-card border-card">
+             <h3>Colin</h3>
+             <img src="./assets//julia/colin-picture.jpg" alt="afbeelding van colin">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Colin</p>
+             <a href="https://colindegroot.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card dylan -->
+         <li class="student-card border-card">
+             <h3>Dylan</h3>
+             <img src="./assets//julia/dylan-picture.jpg" alt="afbeelding van dylan">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Dylan</p>
+             <a href="https://divaninl.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card fatima -->
+         <li class="student-card border-card">
+             <h3>Fatima El Ayadi</h3>
+             <img src="./assets//julia/fatima1-picture.jpg" alt="afbeelding van fatima">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Fatima</p>
+             <a href="https://fatimazelay.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card halima -->
+         <li class="student-card border-card">
+             <h3>Halima</h3>
+             <img src="./assets//julia/halima-picture.png" alt="afbeelding van halima">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Halima</p>
+             <a href="https://halima98.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card iris -->
+         <li class="student-card border-card">
+             <h3>Iris</h3>
+             <img src="./assets//julia/iris-picture.jpeg" alt="afbeelding van iris">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Iris</p>
+             <a href="https://irisvw.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card joost -->
+         <li class="student-card border-card">
+             <h3>Joost</h3>
+             <img src="./assets//julia/joost-png.jpeg" alt="afbeelding van joost">
+             <p>xx jaar</p>
+             <p>Arnhem</p>
+             <p>Hier het motto van Joost</p>
+             <a href="https://hubregtsejoost.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card jordy -->
+         <li class="student-card border-card">
+             <h3>Jordy</h3>
+             <img src="./assets//julia/ananymous-picture.jpg" alt="afbeelding van jordy">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Jordy</p>
+             <a href="https://noxinput.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card jules -->
+         <li class="student-card border-card">
+             <h3>Jules</h3>
+             <img src="./assets//julia/jules-picture.jpg" alt="afbeelding van jules">
+             <p>18 jaar</p>
+             <p>Apeldoorn</p>
+             <p>Klaar staan voor anderen #1</p>
+             <a href="https://julesbruins.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card julia -->
+         <li class="student-card border-card">
+             <h3>Julia</h3>
+             <img src="./assets//julia/julia-picture.JPG" alt="afbeelding van julia">
+             <p>21 jaar</p>
+             <p>Rhenen</p>
+             <p>Het belangrijkste eerst</p>
+             <a href="https://julia-stevens.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card karima -->
+         <li class="student-card border-card">
+             <h3>Karima</h3>
+             <img src="./assets//julia/ananymous-picture.jpg" alt="afbeelding van karima">
+             <p>21 jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Karima</p>
+             <a href="https://karima002.github.io/visitekaartje-karima/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card kim -->
+         <li class="student-card border-card">
+             <h3>Kim</h3>
+             <img src="./assets//julia/kim-picture.jpg" alt="afbeelding van kim">
+             <p>19 jaar</p>
+             <p>Heerhugowaard?</p>
+             <p>Hier het motto van Kim</p>
+             <a href="https://kimnikitaschijf.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card luc -->
+         <li class="student-card border-card">
+             <h3>Luc</h3>
+             <img src="./assets//julia/luc-picture.jpeg" alt="afbeelding van luc">
+             <p>19 jaar</p>
+             <p>Wijk bij Duurstede</p>
+             <p>Hier het motto van Luc</p>
+             <a href="https://debosos.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card marcin -->
+         <li class="student-card border-card">
+             <h3>Marcin</h3>
+             <img src="./assets//julia/marcin-picture.jpeg" alt="afbeelding van marcin">
+             <p>xx jaar</p>
+             <p>Rotterdam</p>
+             <p>Hier het motto van Marcin</p>
+             <a href="https://marsgotbars.github.io/vite-card/"><img src="./assets/julia/svg-icons/arrow-right.svg"
+                     alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card matthijs -->
+         <li class="student-card border-card">
+             <h3>Matthijs</h3>
+             <img src="./assets//julia/matthijs-picture.JPG" alt="afbeelding van matthijs">
+             <p>18 jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Matthijs</p>
+             <a href="https://github.com/Matthijs217/your-tribe-profile-card"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card nadia -->
+         <li class="student-card border-card">
+             <h3>Nadia</h3>
+             <img src="./assets//julia/nadia-picture.jpg" alt="afbeelding van nadia">
+             <p>xx jaar</p>
+             <p>Purmerend</p>
+             <p>Hier het motto van Nadia</p>
+             <a href="https://nadiachaja.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card nas -->
+         <li class="student-card border-card">
+             <h3>Nas</h3>
+             <img src="./assets//julia/nas-picture.png" alt="afbeelding van nas">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Nadia</p>
+             <a href="https://nmiaa.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card ole -->
+         <li class="student-card border-card">
+             <h3>Ole</h3>
+             <img src="./assets//julia/ole-picture.png" alt="afbeelding van ole">
+             <p>17 jaar</p>
+             <p>Haarlem</p>
+             <p>Geen goeroe maar hard werk</p>
+             <a href="https://ofrqq.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card ravi -->
+         <li class="student-card border-card">
+             <h3>Ravi</h3>
+             <img src="./assets//julia/ravi-picture.jpeg" alt="afbeelding van ravi">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Ravi</p>
+             <a href="https://ravirkt.github.io/visitekaartje/"><img src="./assets/julia/svg-icons/arrow-right.svg"
+                     alt="pijl naar rechts"></a>
+         </li>
+
+
+         <!-- card robby -->
+         <li class="student-card border-card">
+             <h3>Robby</h3>
+             <img src="./assets//julia/ananymous-picture.jpg" alt="afbeelding van robby">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Robby</p>
+             <a href="https://robbyrisse.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card robin -->
+         <li class="student-card border-card">
+             <h3>Robin</h3>
+             <img src="./assets//julia/robin-picture.jpeg" alt="afbeelding van robin">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Robin</p>
+             <a href="https://robinwouterson.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card ties -->
+         <li class="student-card border-card">
+             <h3>Ties</h3>
+             <img src="./assets//julia/ties-picture.jpg" alt="afbeelding van ties">
+             <p>17 jaar</p>
+             <p>Amersfoort</p>
+             <p>Hier het motto van Ties</p>
+             <a href="https://ties7.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+
+         <!-- card viresh -->
+         <li class="student-card border-card">
+             <h3>Viresh</h3>
+             <img src="./assets//julia/ananymous-picture.jpg" alt="afbeelding van viresh">
+             <p>xx jaar</p>
+             <p>Amsterdam</p>
+             <p>Hier het motto van Viersh</p>
+             <a href="https://vsheo.github.io/your-tribe-profile-card/"><img
+                     src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+         </li>
+     </ul>
+
+      <!-- LISTING GRID STUDENT -->
+      <section class="campus-grid">
+          <header class="campus-banner">
+              <sup><em>PLEKKEN WAAR JE OP DE CAMPUS KAN WERKEN</em></sup>
+              <h2>Campus sports</h2>
+          </header>
+
+          <section class="campus-listing-grid">
+              <div class="carousel-container">
+                  <ul class="carousel-list">
+                      <li>
+                          <span>Wibautstraat 3b</span>
+                          <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis" />
+                          <h3>Wibauthios</h3>
+                          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus
+                              id nascetur.</p>
+                          <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                      </li>
+                      <li>
+                          <span>Wibautstraat 3b</span>
+                          <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis" />
+                          <h3>Wibauthios</h3>
+                          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus
+                              id nascetur.</p>
+                          <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                      </li>
+                      <li>
+                          <span>Wibautstraat 3b</span>
+                          <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis" />
+                          <h3>Wibauthios</h3>
+                          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus
+                              id nascetur.</p>
+                          <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                      </li>
+                      <li>
+                          <span>Wibautstraat 3b</span>
+                          <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis" />
+                          <h3>Wibauthios</h3>
+                          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus
+                              id nascetur.</p>
+                          <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                      </li>
+                      <li>
+                          <span>Wibautstraat 3b</span>
+                          <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis" />
+                          <h3>Wibauthios</h3>
+                          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla
+                              purus
+                              id nascetur.</p>
+                          <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- Carousel Navigation -->
+              <button class="carousel-prev">&#10094;</button>
+              <button class="carousel-next">&#10095;</button>
+          </section>
+      </section>
+ </main>
 
     <!-- FOOTER -->
-    
+
+    <script src="scripts/script.js"></script>
+
 </body>
+
 </html>

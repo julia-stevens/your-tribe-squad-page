@@ -1,0 +1,815 @@
+/* Main colors */
+:root {
+    --dark-blue: #020242;
+    --bright-green: #67E5BF;
+    --pink-purple: #A675F4;
+    --main-white: #FAFAFA;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 8px;
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+body {
+    background-color: var(--main-white);
+}
+
+/* Navigatie balk die opdezelfde plek blijft staan + grid */
+nav {
+    background-color: var(--dark-blue);
+    border-radius: .5em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr .1fr;
+    gap: 1em;
+
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* Logo */
+nav a:first-of-type {
+    grid-column: 1;
+
+    align-self: center;
+    justify-self: center;
+}
+
+/* Logo afmetingen van afbeelding */
+nav a:first-of-type img {
+    width: 3em;
+    filter: invert(77%) sepia(82%) saturate(281%) hue-rotate(98deg) brightness(97%) contrast(85%);
+}
+
+/* Vormgeving link studenten en campus */
+nav a:nth-of-type(2),
+a:nth-of-type(3) {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: 650;
+    font-size: .7em;
+    padding: 1em 1em;
+
+    height: 80%;
+}
+
+/* Afmeting link studenten en campus */
+nav a:nth-of-type(2) img,
+a:nth-of-type(3) img {
+    filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
+    width: 1.5em;
+    margin-right: .5em;
+}
+
+/* Vormgeving link studenten */
+nav a:nth-of-type(2) {
+    background-color: var(--bright-green);
+    border-radius: .75em;
+
+    grid-column: 2;
+
+    align-self: center;
+    justify-self: center;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+/* Vormgeving link campus */
+nav a:nth-of-type(3) {
+    background-color: var(--pink-purple);
+    border-radius: .75em;
+
+    grid-column: 3;
+
+    align-self: center;
+    justify-self: center;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+/* Vormgeving en positionering header */
+header {
+    text-align: center;
+    line-height: 2em;
+}
+
+header h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+header p {
+    line-height: 2em;
+    width: 65vw;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+header img {
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
+    margin-top: -3em;
+}
+
+/* Achtergrond kleur en positionering element met alle cards van studenten */
+main {
+    background-color: var(--dark-blue);
+    border-radius: .5em;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+/* Vormgeving en positionering zoek balk  */
+main input {
+    background-color: var(--bright-green);
+    border-style: none;
+    padding: 1em;
+    border-radius: .5em;
+    width: 75%;
+    margin-top: 1em;
+
+    background-image: url('../assets/julia/svg-icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: right 1em bottom 1.2em;
+    backdrop-filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
+    background-size: 1.5em;
+}
+
+/* Kleur tekst zoekbalk */
+input::placeholder {
+    color: var(--dark-blue);
+}
+
+/* Grid met alle cards */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    padding-bottom: 3em;
+
+    margin-top: 2em;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
+    grid-auto-flow: dense;
+    row-gap: 2em;
+}
+
+/* Vormgeving en positionering van een card met grid */
+li {
+    font-size: 4px;
+    /* 1em is nu ...px */
+
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1em 22em 1em;
+    grid-template-rows: 6em 15em max-content;
+
+    margin-top: 3em;
+    justify-self: center;
+    align-self: center;
+
+    position: relative;
+}
+
+li {
+    font-size: 4px;
+}
+
+.main-article article {
+    font-size: 5px;
+}
+
+/* Naam in card */
+li>h3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+
+    background-color: var(--pink-purple);
+    margin: 0;
+    padding: .5em 1.5em;
+    border-radius: 2em;
+
+    justify-self: center;
+    align-self: start;
+
+    z-index: 1;
+
+    translate: 0% -50%;
+
+
+}
+
+/* Afbeelding in card */
+li>img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-style: solid;
+    border-color: var(--bright-green);
+    border-radius: .5em;
+}
+
+/* Positionering in grid van leeftijd, plaats en motto */
+li>p {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+    font-size: 1em;
+}
+
+/* Vormgeving van afbeeldingen van pijl */
+li>a>img {
+    margin: 0;
+
+    filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
+    width: 1.3em;
+}
+
+/* Vormgeving en positionering van leeftijd en plaats */
+li>a {
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+    background-color: var(--bright-green);
+
+    align-self: end;
+    justify-self: end;
+
+    padding: .5em;
+    margin-bottom: .5em;
+    height: max-content;
+    border-radius: 2em;
+
+    width: 2.5em;
+    height: 2.5em;
+
+    text-align: center
+}
+
+/* Vormgeving leeftijd + icoon */
+li>p:nth-of-type(1) {
+    background-color: var(--bright-green);
+
+    align-self: start;
+    justify-self: start;
+
+    padding: .1em 1em .1em 2em;
+    border-radius: 2em;
+
+    background-image: url('../assets/julia/svg-icons/student.svg');
+    background-repeat: no-repeat;
+    background-position: left .5em bottom .1em;
+    backdrop-filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
+    background-size: 1.3em;
+
+    translate: 15% -130%;
+}
+
+/* Vormgeving plaats + icoon */
+li>p:nth-of-type(2) {
+    background-color: var(--bright-green);
+
+    align-self: start;
+    justify-self: end;
+
+    padding: .1em 1em .1em 2.2em;
+    border-radius: 2em;
+
+    background-image: url('../assets/julia/svg-icons/map.svg');
+    background-repeat: no-repeat;
+    background-position: left .5em bottom .1em;
+    backdrop-filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
+    background-size: 1.3em;
+
+    translate: -15% -130%;
+}
+
+/* Vormgeving en positionering pijl */
+li>p:nth-of-type(3) {
+    color: var(--bright-green);
+
+    align-self: center;
+    justify-self: start;
+
+    font-size: 1.3em;
+    text-align: start;
+
+    margin: 2em 0em 2em 0em;
+}
+
+/* Border rondom card */
+li::before {
+    content: "";
+
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+
+    border-style: solid;
+    border-color: var(--bright-green);
+    border-width: 1px;
+    border-radius: .5em;
+
+    height: 100%;
+}
+
+/* HIER KOMT DE CAMPUS LISTING GRID */
+
+/* Vormgeving en positionering campus card met een grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
+    grid-auto-flow: dense;
+}
+
+.grid article {
+    justify-self: center;
+    margin-bottom: 2em;
+}
+
+/* HIER KOMT DE CAMPUS LISTING GRID */
+
+section.campus-listing-grid {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; 
+  padding-bottom: 50px; 
+}
+
+section.campus-listing-grid ul {
+	margin:0;
+	padding: 0;
+	list-style-type:none;
+}
+
+section.campus-listing-grid li {
+  justify-content: center;
+	position:relative;
+	width:26em;
+	padding:2em 1em 1em;
+	display:grid;
+	grid-template-rows:16em 6em 7em;
+	grid-template-columns:1em 21em 1em;
+	row-gap:1em;
+}
+
+section.campus-listing-grid li::before {
+	content:"";
+	color:black;
+	grid-row-start:2;
+	grid-row-end:4;
+	grid-column-start:2;
+	grid-column-end:3;
+	background: #050542;
+	border:solid 1px #67E5BF;
+	border-radius:1em;
+	z-index:1;
+} 
+
+section.campus-listing-grid span {
+	grid-row-start:1;
+	grid-row-end:3;
+	grid-column-start:2;
+	align-self:start;
+	justify-self:left;
+	z-index:1;
+	background-color: #67E5BF;
+  font-family: 'Open Sans';
+  font-size: 15px;
+	margin-top: 20px;
+	padding:.5em 1em;
+	border-radius:2em;
+}
+
+section.campus-listing-grid img {
+	width:100%;
+  height: 350px;
+	grid-row-start:1;
+	grid-column-start:1;
+	grid-column-end: 4;
+	border:solid 1px black;
+	border-radius:1em;
+}
+
+section.campus-listing-grid h3 {
+	font-size: 25px;
+	grid-row-start:2;
+	grid-column-start:2;
+	z-index:3;
+	padding: 20px 20px 20px 20px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+section.campus-listing-grid p {
+	grid-row-start:2;
+	grid-column-start:2;
+	z-index:3;
+	padding: 60px 20px 20px 20px;
+  font-family: 'Open Sans regular';
+  font-size: 15px;
+   color: #ffffff;
+   line-height: 25px;
+   margin-top: 10px;
+}
+
+section.campus-listing-grid li a {
+	grid-row-start:3;
+	grid-column-start:2;
+  align-self: end;
+  justify-self: end;
+  background: #67E5BF;
+  padding: 15px 10px 10px 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  z-index: 4;
+}
+
+section.campus-listing-grid a img {
+	height: 20px;
+  width: 20px;
+  border: none;
+}
+
+.campus-listing-grid {
+     position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-list li {
+    flex: 0 0 50%; /* Full width per item */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-list img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CAROUSEL BUTTONS PREVIOUS / NEXT */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: #050542;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 22px 15px 22px;
+ 
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* MEDIA QUERY STUDENTENPAGINA */
+
+@media screen and (min-width: 200px) {
+    * {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 250px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    * {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    * {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1028px) {
+    * {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 200px) {
+    li {
+        font-size: 5px;
+    }
+}
+
+@media screen and (min-width: 250px) {
+    li {
+        font-size: 6px;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1028px) {
+    li {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 200px) {
+    .main-article article {
+        font-size: 5px;
+    }
+}
+
+@media screen and (min-width: 250px) {
+    .main-article article {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    .main-article article {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 500px) {
+    .main-article article {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1028px) {
+    .main-article article {
+        font-size: 16px;
+    }
+}
+
+/* CAROUSEL CAMPUS */
+@media screen and (min-width: 768px) {
+  .carousel-list li {
+     flex: 0 0 33.33%; /* 3 items per row on larger screens */
+  }
+}
+
+/* HIER BEGINT DE CAMPUS */
+
+
+/* Vormgeving en positionering campus elementen */
+.main-article h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.main-article h2 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.main-article a {
+    font-size: 1.3em;
+    margin-top: 2em;
+}
+
+.main-article a img {
+    width: 1.5em;
+    margin-left: 1em;
+}
+
+.main-article {
+    /* display: flex; 
+    flex-direction: column;
+    align-items: center; */
+
+    line-height: 1em;
+    text-align: center;
+
+    margin-top: 2em;
+
+}
+
+/* HIER KOMT DE CAMPUS LISTING */
+
+ul.campus-grid-page {
+  justify-content: center;
+  display: grid;
+  flex-direction: row;
+grid-template-columns: repeat( auto-fit, minmax(380px, 1fr) );
+}
+
+.campus-container {
+   width: 100%;
+    overflow: hidden;
+  
+}
+
+section.campus-page-listing-grid {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; 
+  padding-bottom: 50px; 
+}
+
+section.campus-page-listing-grid ul {
+	margin:0;
+	padding: 0;
+	list-style-type:none;
+}
+
+section.campus-page-listing-grid li {
+  justify-content: center;
+	position:relative;
+	width:26em;
+	padding:2em 1em 1em;
+	display:grid;
+	grid-template-rows:16em 6em 7em;
+	grid-template-columns:1em 21em 1em;
+	row-gap:1em;
+}
+
+section.campus-page-listing-grid li::before {
+	content:"";
+	color:black;
+	grid-row-start:2;
+	grid-row-end:4;
+	grid-column-start:2;
+	grid-column-end:3;
+	background: #050542;
+	border:solid 1px #67E5BF;
+	border-radius:1em;
+	z-index:1;
+} 
+
+section.campus-page-listing-grid span {
+	grid-row-start:1;
+	grid-row-end:3;
+	grid-column-start:2;
+	align-self:start;
+	justify-self:left;
+	z-index:1;
+	background-color: #67E5BF;
+  font-family: 'Open Sans';
+  font-size: 15px;
+	margin-top: 20px;
+	padding:.5em 1em;
+	border-radius:2em;
+}
+
+section.campus-page-listing-grid img {
+	width:100%;
+  height: 350px;
+	grid-row-start:1;
+	grid-column-start:1;
+	grid-column-end: 4;
+	border:solid 1px black;
+	border-radius:1em;
+}
+
+section.campus-page-listing-grid h3 {
+	font-size: 25px;
+	grid-row-start:2;
+	grid-column-start:2;
+	z-index:3;
+	padding: 20px 20px 20px 20px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+section.campus-page-listing-grid p {
+	grid-row-start:2;
+	grid-column-start:2;
+	z-index:3;
+	padding: 60px 20px 20px 20px;
+  font-family: 'Open Sans regular';
+  font-size: 15px;
+   color: #ffffff;
+   line-height: 25px;
+   margin-top: 10px;
+}
+
+section.campus-page-listing-grid li a {
+	grid-row-start:3;
+	grid-column-start:2;
+  align-self: end;
+  justify-self: end;
+  background: #67E5BF;
+  padding: 15px 10px 10px 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  z-index: 4;
+}
+
+section.campus-page-listing-grid a img {
+	height: 20px;
+  width: 20px;
+  border: none;
+}
+
+.campus-page-listing-grid {
+     position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.campus-grid-page li {
+    flex: 0 0 50%; /* Full width per item */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.campus-grid-page img {
+    max-width: 100%;
+    height: auto;
+}
+
