@@ -6,26 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
-    
+
 </head>
 
 <body>
     <!-- HIER START DE NAVIGATIEBAR -->
-    <header class="navbar">
-        <nav>
-            <img src="/assets/logo-fdnd.svg" alt="logo Frondend Design & Development">
-            <div class="nav-buttons">
-                <a class="button-student-header" href="#">
-                    <img src="assets/icon-studenten.svg" alt="">
-                    Studenten
-                </a>
-                <a class="button-campus-header" href="#">
-                    <img src="assets/icon-campus.svg" alt="">
-                    Campus
-                </a>
-            </div>
-        </nav>
-    </header>
+   <header class="navbar">
+       <nav>
+           <a href="amber.html"><img src="/assets/logo-fdnd.svg" alt="logo Frondend Design & Development"></a>
+           <div class="nav-buttons">
+               <a class="button-student-header" href="amber.html#card-content">
+                   <img src="assets/icon-studenten.svg" alt="icon user studenten">Studenten</a>
+               <a class="button-campus-header" href="amber-campus.html">
+                   <img src="assets/icon-campus.svg" alt="icon campus">Campus</a>
+           </div>
+       </nav>
+   </header>
     <!-- HIER START DE CONTENT -->
     <main>
         <!-- HIER START DE BANNER -->
@@ -35,37 +31,364 @@
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus id nascetur.
                 Eget donec donec leo urna posuere rutrum eros. Aenean aenean pulvinar potenti a est egestas inceptos
                 posuere.</p>
-            <img src="assets/squad-image.png" alt="Banner vector school">
+            <div class="buttons-banner">
+                <a class="squad" href="#card-content">Studenten squad G1<img src="assets/arrow-down-squadpage.svg"
+                        alt=""></a>
+                <a class="campus" href="amber-campus.html">Favoriete plekken campus<img src="assets/arrow-right-squad.svg" alt=""></a>
+            </div>
+            <img class="vector" src="./assets/squad-image.png" alt="Banner vector school">
         </section>
         <!-- LISTING GRID STUDENT -->
-        <section class="card-content">
-            <form class="search-filter" action="action_page.php">
-                <input type="text" placeholder="Zoek op naam student.." name="search">
-            </form>
-            <ul>
+        <section id="card-content" class="card-content">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Zoek op naam student.." name="search">
+            <ul id="myUL">
                 <li>
                     <h2>Amber Schalker</h2>
-                    <img src="assets/mugshots/mugshot.JPG" alt="" />
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus id
-                        nascetur. Eget donec donec.</p>
+                    <img src="assets/mugshots/squad1g-amber.jpg" alt="Amber Schalker" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="https://ambersr.github.io/your-tribe-profile-card/"><img src="assets/arrow-right-squad.svg"
+                            alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Athene Guanipa</h2>
+                    <img src="assets/mugshots/squad1g-athene.jpg" alt="Athene Guanipa" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
                     <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
                 </li>
-                 <li>
-                     <h2>Amber Schalker</h2>
-                     <img src="assets/mugshots/mugshot.JPG" alt="" />
-                     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus id
-                         nascetur. Eget donec donec.</p>
-                     <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
-                 </li>
-                  <li>
-                      <h2>Amber Schalker</h2>
-                      <img src="assets/mugshots/mugshot.JPG" alt="" />
-                      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus id
-                          nascetur. Eget donec donec.</p>
-                      <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
-                  </li>
+                <li>
+                    <h2>Branco van Beek</h2>
+                    <img src="assets/mugshots/squad1g-branco.jpg" alt="Branco van Beek" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Cedrik Wouters</h2>
+                    <img src="assets/mugshots/squad1g-cedrik.jpg" alt="Cedrik Wouters" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Christian Osa-Oni</h2>
+                    <img src="assets/mugshots/squad1g-christian.jpg" alt="Christian Osa-Oni" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Clarice Boerlijst</h2>
+                    <img src="assets/mugshots/squad1g-clarice.jpg" alt="Clarice Boerlijst" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Colin de Groot</h2>
+                    <img src="assets/mugshots/squad1g-colin.jpg" alt="Colin de Groot" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Dylan van Nierop</h2>
+                    <img src="assets/mugshots/squad1g-dylan.jpg" alt="Dylan van Nierop" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Faisal Anoukou</h2>
+                    <img src="assets/mugshots/squad1g-faisal.jpg" alt="Faisal Anoukou" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Fatima El Ayadi el ...</h2>
+                    <img src="assets/mugshots/squad1g-fatima-A.jpg" alt="Fatima El Ayadi el ..." />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Fatima El Hilali</h2>
+                    <img src="assets/mugshots/squad1g-fatima-H.jpg" alt="Fatima El Hilali" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Halima Dinle</h2>
+                    <img src="assets/mugshots/squad1g-halima.jpg" alt="Halima Dinle" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Haroub Said Said</h2>
+                    <img src="assets/mugshots/squad1g-haroub.jpg" alt="Haroub Said Said" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Iris van Willigen</h2>
+                    <img src="assets/mugshots/squad1g-iris.jpg" alt="Iris van Willigen" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Joost Hubregtse</h2>
+                    <img src="assets/mugshots/squad1g-joost.jpg" alt="Joost Hubregtse" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Jordy van Wetering</h2>
+                    <img src="assets/mugshots/squad1g-jordy.jpg" alt="Jordy van Wetering" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Jules Bruins</h2>
+                    <img src="assets/mugshots/squad1g-jules.jpg" alt="Jules Bruins" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Julia Stevens</h2>
+                    <img src="assets/mugshots/squad1g-julia.jpg" alt="Julia Stevens" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Karima Mouadi</h2>
+                    <img src="assets/mugshots/squad1g-karima.jpg" alt="Karima Mouadi" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Kim Nikita Schijf</h2>
+                    <img src="assets/mugshots/squad1g-kim.jpg" alt="Kim Nikita Schijf" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Luc Hoogerwerf</h2>
+                    <img src="assets/mugshots/squad1g-luc.jpg" alt="Luc Hoogerwerf" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Marcin Magdziak</h2>
+                    <img src="assets/mugshots/squad1g-marcin.jpg" alt="Marcin Magdziak" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Matthijs Ten Brink</h2>
+                    <img src="assets/mugshots/squad1g-matthijs.jpg" alt="Matthijs Ten Brink" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Nadia Visser</h2>
+                    <img src="assets/mugshots/squad1g-nadia.jpg" alt="Nadia Visser" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Nas Ibrahim</h2>
+                    <img src="assets/mugshots/squad1g-nas.jpg" alt="Nas Ibrahim" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Ole Franssen</h2>
+                    <img src="assets/mugshots/squad1g-ole.jpg" alt="Ole Franssen" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Ravi Tjikhoeri</h2>
+                    <img src="assets/mugshots/squad1g-ravi.jpg" alt="Ravi Tjikhoeri" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Robby Risse</h2>
+                    <img src="assets/mugshots/squad1g-robby.jpg" alt="Robby Risse" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Robin Wouterson</h2>
+                    <img src="assets/mugshots/squad1g-robin.jpg" alt="Robin Wouterson" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Saif Muhamad</h2>
+                    <img src="assets/mugshots/squad1g-saif.jpg" alt="Saif Muhamad" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
+                <li>
+                    <h2>Ties Beeftink</h2>
+                    <img src="assets/mugshots/squad1g-ties.jpg" alt="Ties Beeftink" />
+                    <span class="info">
+                        <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
+                        <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
+                        nascetur.</p>
+                    <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                </li>
             </ul>
             <!-- DIT IS DE PAGINATION -->
+
+            <div id="loadMore">Load more +</div>
+            <div id="showLess">Show less -</div>
             <nav class="pagination">
                 <a href="#">&laquo;</a>
                 <a href="#">1</a>
@@ -78,8 +401,6 @@
             </nav>
         </section>
 
-
-        
         <!-- LISTING GRID STUDENT -->
         <section class="campus-grid">
             <header class="campus-banner">
@@ -114,49 +435,46 @@
                                 id nascetur.</p>
                             <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
                         </li>
-                         <li>
-                             <span>Wibautstraat 3b</span>
-                             <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis" />
-                             <h3>Wibauthios</h3>
-                             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus
-                                 id nascetur.</p>
-                             <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
-                         </li>
-                          <li>
-                              <span>Wibautstraat 3b</span>
-                              <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis" />
-                              <h3>Wibauthios</h3>
-                              <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla
-                                  purus
-                                  id nascetur.</p>
-                              <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
-                          </li>
+                        <li>
+                            <span>Wibautstraat 3b</span>
+                            <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis" />
+                            <h3>Wibauthios</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus
+                                id nascetur.</p>
+                            <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                        </li>
+                        <li>
+                            <span>Wibautstraat 3b</span>
+                            <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis" />
+                            <h3>Wibauthios</h3>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla
+                                purus
+                                id nascetur.</p>
+                            <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Carousel Navigation -->
                 <button class="carousel-prev">&#10094;</button>
                 <button class="carousel-next">&#10095;</button>
             </section>
-
-
         </section>
-        <!-- DIT IS DE FOOTER -->
-        <footer>
-            <img src="/assets/logo-fdnd.svg" alt="logo Frondend Design & Development">
-            <div class="buttons-footer">
-                <a class="button-student-footer" href="#">
-                   <img src="assets/icon-studenten.svg" alt="">
-                    Studenten
-                </a>
-                 <a class="button-campus-footer" href="#">
-                     <img src="assets/icon-campus.svg" alt="">
-                     Campus
-                 </a>
-            </div>
-            <p>Copyright - Julia, Clarice en Amber - Squad G1</p>
-        </footer>
-
     </main>
+    <!-- DIT IS DE FOOTER -->
+    <footer>
+        <a href="amber.html"><img src="/assets/logo-fdnd.svg" alt="logo Frondend Design & Development"></a>
+        <div class="buttons-footer">
+            <a class="button-student-footer" href="amber.html#card-content">
+                <img src="assets/icon-studenten.svg" alt="icon student">
+                Studenten
+            </a>
+            <a class="button-campus-footer" href="amber-campus.html">
+                <img src="assets/icon-campus.svg" alt="icon campus">
+                Campus
+            </a>
+        </div>
+        <p>Copyright - Julia, Clarice en Amber - Squad G1</p>
+    </footer>
 
     <script src="scripts/script.js"></script>
 
