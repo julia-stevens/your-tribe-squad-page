@@ -1,7 +1,9 @@
 
 # Squad page team 1 - Eendtjes
 
-Wij zijn de Eendtjes: Julia, Clarice en Amber. In de eerste sprint hebben we samen een squad page ontworpen en ontwikkeld volgens de designcyclus. Na analyse en inspiratie hebben we individueel geschetst en onze ideeën samengevoegd tot een ontwerp, dit we hebben gebouwd met HTML, CSS en JS. Wij zijn benieuwd wat jullie ervan vinden!
+Wij zijn de Eendtjes: Julia, Clarice en Amber. In sprint 1 hebben we samen gewerkt aan het ontwerpen en ontwikkelen van een squad page van squad G1. Dit hebben we gedaan volgens het design en ontwikkel cyclus. Na analyse en inspiratie hebben we individueel geschetst en onze ideeën samengevoegd tot één ontwerp. Dit hebben we gebouwd met HTML, CSS en JS. 
+<br>
+Wij zijn benieuwd wat jullie ervan vinden!
 
 ## Inhoudsopgave
 * [Wie zijn wij](#wie-zijn-wij)
