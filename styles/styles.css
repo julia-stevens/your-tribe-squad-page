@@ -161,7 +161,7 @@ input::placeholder {
 }
 
 /* Grid met alle cards */
-ul {
+#myUL {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -275,7 +275,7 @@ li>a {
 }
 
 /* Vormgeving leeftijd + icoon */
-li>p:nth-of-type(1) {
+.student-card >p:nth-of-type(1) {
     background-color: var(--bright-green);
 
     align-self: start;
@@ -294,7 +294,7 @@ li>p:nth-of-type(1) {
 }
 
 /* Vormgeving plaats + icoon */
-li>p:nth-of-type(2) {
+.student-card>p:nth-of-type(2) {
     background-color: var(--bright-green);
 
     align-self: start;
@@ -340,186 +340,285 @@ li::before {
     height: 100%;
 }
 
-/* HIER KOMT DE CAMPUS LISTING GRID */
+/* HIER KOMT HET CAMPUS ONDERDEEL VAN DE STUDENTEN PAGINA */
 
-/* Vormgeving en positionering campus card met een grid */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
-    grid-auto-flow: dense;
+.campus {
+    background-color: var(--main-white);
+    font-family: "Open Sans", sans-serif;
+
 }
 
-.grid article {
-    justify-self: center;
-    margin-bottom: 2em;
+.campus h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 5em;
 }
 
-/* HIER KOMT DE CAMPUS LISTING GRID */
-
-section.campus-listing-grid {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center; 
-  padding-bottom: 50px; 
+.campus h2 {
+    font-size: 2em;
+    font-weight: 800;
 }
 
-section.campus-listing-grid ul {
-	margin:0;
-	padding: 0;
-	list-style-type:none;
+.campus a {
+    font-size: 1.3em;
+    margin-top: 2em;
 }
 
-section.campus-listing-grid li {
-  justify-content: center;
-	position:relative;
-	width:26em;
-	padding:2em 1em 1em;
-	display:grid;
-	grid-template-rows:16em 6em 7em;
-	grid-template-columns:1em 21em 1em;
-	row-gap:1em;
+.campus > a img {
+    width: 1.5em;
+    margin-left: 1em;
 }
 
-section.campus-listing-grid li::before {
-	content:"";
-	color:black;
-	grid-row-start:2;
-	grid-row-end:4;
-	grid-column-start:2;
-	grid-column-end:3;
-	background: #050542;
-	border:solid 1px #67E5BF;
-	border-radius:1em;
-	z-index:1;
-} 
-
-section.campus-listing-grid span {
-	grid-row-start:1;
-	grid-row-end:3;
-	grid-column-start:2;
-	align-self:start;
-	justify-self:left;
-	z-index:1;
-	background-color: #67E5BF;
-  font-family: 'Open Sans';
-  font-size: 15px;
-	margin-top: 20px;
-	padding:.5em 1em;
-	border-radius:2em;
-}
-
-section.campus-listing-grid img {
-	width:100%;
-  height: 350px;
-	grid-row-start:1;
-	grid-column-start:1;
-	grid-column-end: 4;
-	border:solid 1px black;
-	border-radius:1em;
-}
-
-section.campus-listing-grid h3 {
-	font-size: 25px;
-	grid-row-start:2;
-	grid-column-start:2;
-	z-index:3;
-	padding: 20px 20px 20px 20px;
-  font-family: 'Open Sans';
-  font-weight: 700;
-  font-size: 20px;
-  color: #ffffff;
-  margin-top: 10px;
-}
-
-section.campus-listing-grid p {
-	grid-row-start:2;
-	grid-column-start:2;
-	z-index:3;
-	padding: 60px 20px 20px 20px;
-  font-family: 'Open Sans regular';
-  font-size: 15px;
-   color: #ffffff;
-   line-height: 25px;
-   margin-top: 10px;
-}
-
-section.campus-listing-grid li a {
-	grid-row-start:3;
-	grid-column-start:2;
-  align-self: end;
-  justify-self: end;
-  background: #67E5BF;
-  padding: 15px 10px 10px 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  z-index: 4;
-}
-
-section.campus-listing-grid a img {
-	height: 20px;
-  width: 20px;
-  border: none;
-}
-
-.campus-listing-grid {
-     position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-   
-}
-
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel-list {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.carousel-list li {
-    flex: 0 0 50%; /* Full width per item */
-    padding: 20px;
-    box-sizing: border-box;
+.campus {
     text-align: center;
+
 }
 
-.carousel-list img {
-    max-width: 100%;
-    height: auto;
+/* Grid met micro lay-out van een campus card */
+.slider-content {
+    display: grid;
+    grid-template-columns: 2em 20em 2em;
+    grid-template-rows: 18em 1fr max-content;
+
+    position: relative;
+
+    margin-top: -2em;
 }
 
-/* CAROUSEL BUTTONS PREVIOUS / NEXT */
-.carousel-prev, .carousel-next {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    background-color: #050542;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 15px 22px 15px 22px;
- 
-    cursor: pointer;
-    font-size: 24px;
+/* adres */
+.slider-content-locatie {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    z-index: 1;
+
+    padding: .3em 1em .3em 2em;
+    border-radius: 2em;
+    background-color: var(--bright-green);
+
+    background-image: url('../assets/julia/svg-icons/map.svg');
+    background-repeat: no-repeat;
+    background-position: left .5em bottom .2em;
+    backdrop-filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
+    background-size: 1.1em;
+
+    align-self: start;
+    justify-self: start;
+
+    translate: 0 300%;
+
+    color: var(--dark-blue);
+
 }
 
-.carousel-prev {
-    left: 10px;
+/* afbeelding */
+.slider-content>img {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+    width: 100%;
+    height: 100%;
+
+    border-style: solid;
+    border-color: var(--dark-blue);
+    border-radius: .5em;
+
+    translate: 0 25%;
+    z-index: 0;
 }
 
-.carousel-next {
-    right: 10px;
+/* pijl naar links */
+/* .slider-content>a:nth-of-type(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    background-color: var(--dark-blue);
+    padding: .75em;
+    border-radius: .5em;
+
+    align-self: center;
+    justify-self: start;
+
+    translate: -50% 100%;
+
+} */
+
+/* afbeeldingen van pijlen kleur aangepast */
+.main-article article>a img {
+    margin: 0;
+
+    filter: invert(77%) sepia(82%) saturate(281%) hue-rotate(98deg) brightness(97%) contrast(85%);
 }
+
+/* pijl naar rechts */
+/* .main-article article>a:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+
+    background-color: var(--dark-blue);
+    padding: .75em;
+    border-radius: .5em;
+
+    align-self: center;
+    justify-self: end;
+
+    translate: 50% 100%;
+} */
+
+/* naam van plaats op campus */
+.slider-content > h4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    color: var(--bright-green);
+    text-align: center;
+
+    z-index: 1;
+
+    padding: 2em .5em;
+
+}
+
+/* tekst met uitleg over campus plek */
+.slider-content-tekst {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+    color: var(--bright-green);
+
+    text-align: start;
+    font-size: 1em;
+    padding: 0em 2em 2em 3.5em;
+
+    align-self: start;
+    justify-self: center;
+
+    z-index: 1;
+
+    text-align: start;
+    
+
+}
+
+/* pijl naar rechts met link */
+.slider-content > a:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+    align-self: end;
+    justify-self: end;
+
+    padding: .5em;
+    height: max-content;
+    border-radius: 4em;
+
+    background-color: var(--bright-green);
+
+    margin-top: 7em;
+    margin-bottom: 1.5em;
+
+    z-index: 1;
+
+
+    translate: -50% 25%;
+}
+
+/* afbeelding van pijl naar rechts */
+.main-article article>a:nth-of-type(1) img {
+    margin: 0;
+
+    filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
+}
+
+/* gekleurde border rondom tekst en titel */
+.slider-content::before {
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+
+    background-color: var(--dark-blue);
+    border-radius: .5em;
+    border-style: solid;
+    border-color: var(--bright-green);
+
+    z-index: 1;
+}
+
+/* SWIPER POSITIONERING en VORMGEVING KNOPPEN */
+.swiper {
+    width: 100%; 
+    height: max-content;
+}
+
+.swiper-button-prev {
+    background-color: var(--pink-purple);
+    color: var(--bright-green); 
+    border-style: none; 
+    padding: 1.5em;
+    border-radius: .75em;
+}
+
+.swiper-button-next {
+    background-color: var(--pink-purple);
+    color: var(--bright-green); 
+    border-style: none; 
+    padding: 1.5em;
+    border-radius: .75em;
+}
+
+.swiper-button-next:after {
+    font-size: 1.5em;
+}
+
+.swiper-button-prev:after {
+    font-size: 1.5em;
+}
+
+.swiper-wrapper {
+    padding-left: 22.5%;
+}
+
+@media screen and (min-width: 300px) {
+    .swiper-wrapper {
+        padding-left: 25%;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    .swiper-wrapper {
+        padding-left: 10%;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .swiper-wrapper {
+        padding-left: 15%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .swiper-wrapper {
+        padding-left: 17%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .swiper-wrapper {
+        padding-left: 25%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .swiper-wrapper {
+        padding-left: 25%;
+    }
+}
+
+
 
 /* MEDIA QUERY STUDENTENPAGINA */
 
@@ -656,160 +755,52 @@ section.campus-listing-grid a img {
 
 }
 
-/* HIER KOMT DE CAMPUS LISTING */
-
-ul.campus-grid-page {
-  justify-content: center;
-  display: grid;
-  flex-direction: row;
-grid-template-columns: repeat( auto-fit, minmax(380px, 1fr) );
+/* GRID CAMPUS PAGINA MET CARDS */
+.campus-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
+    grid-auto-flow: dense;
 }
 
-.campus-container {
-   width: 100%;
-    overflow: hidden;
-  
+
+.campus-slider {
+    justify-self: center;
+    margin-bottom: 2em;
 }
 
-section.campus-page-listing-grid {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center; 
-  padding-bottom: 50px; 
+
+.campus-campus {
+    background-color: var(--main-white);
+    font-family: "Open Sans", sans-serif;
+
 }
 
-section.campus-page-listing-grid ul {
-	margin:0;
-	padding: 0;
-	list-style-type:none;
+.campus-campus h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 5em;
 }
 
-section.campus-page-listing-grid li {
-  justify-content: center;
-	position:relative;
-	width:26em;
-	padding:2em 1em 1em;
-	display:grid;
-	grid-template-rows:16em 6em 7em;
-	grid-template-columns:1em 21em 1em;
-	row-gap:1em;
+.campus-campus h2 {
+    font-size: 2em;
+    font-weight: 800;
 }
 
-section.campus-page-listing-grid li::before {
-	content:"";
-	color:black;
-	grid-row-start:2;
-	grid-row-end:4;
-	grid-column-start:2;
-	grid-column-end:3;
-	background: #050542;
-	border:solid 1px #67E5BF;
-	border-radius:1em;
-	z-index:1;
-} 
-
-section.campus-page-listing-grid span {
-	grid-row-start:1;
-	grid-row-end:3;
-	grid-column-start:2;
-	align-self:start;
-	justify-self:left;
-	z-index:1;
-	background-color: #67E5BF;
-  font-family: 'Open Sans';
-  font-size: 15px;
-	margin-top: 20px;
-	padding:.5em 1em;
-	border-radius:2em;
+.campus-campus a {
+    font-size: 1.3em;
+    margin-top: 2em;
 }
 
-section.campus-page-listing-grid img {
-	width:100%;
-  height: 350px;
-	grid-row-start:1;
-	grid-column-start:1;
-	grid-column-end: 4;
-	border:solid 1px black;
-	border-radius:1em;
+.campus-campus > a img {
+    width: 1.5em;
+    margin-left: 1em;
 }
 
-section.campus-page-listing-grid h3 {
-	font-size: 25px;
-	grid-row-start:2;
-	grid-column-start:2;
-	z-index:3;
-	padding: 20px 20px 20px 20px;
-  font-family: 'Open Sans';
-  font-weight: 700;
-  font-size: 20px;
-  color: #ffffff;
-  margin-top: 10px;
-}
-
-section.campus-page-listing-grid p {
-	grid-row-start:2;
-	grid-column-start:2;
-	z-index:3;
-	padding: 60px 20px 20px 20px;
-  font-family: 'Open Sans regular';
-  font-size: 15px;
-   color: #ffffff;
-   line-height: 25px;
-   margin-top: 10px;
-}
-
-section.campus-page-listing-grid li a {
-	grid-row-start:3;
-	grid-column-start:2;
-  align-self: end;
-  justify-self: end;
-  background: #67E5BF;
-  padding: 15px 10px 10px 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  z-index: 4;
-}
-
-section.campus-page-listing-grid a img {
-	height: 20px;
-  width: 20px;
-  border: none;
-}
-
-.campus-page-listing-grid {
-     position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-   
-}
-
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel-list {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.campus-grid-page li {
-    flex: 0 0 50%; /* Full width per item */
-    padding: 20px;
-    box-sizing: border-box;
+.campus-campus {
     text-align: center;
 }
 
-.campus-grid-page img {
-    max-width: 100%;
-    height: auto;
-}
+
+
+
 
