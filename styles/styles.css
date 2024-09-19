@@ -27,7 +27,8 @@ nav, .nav-campus {
     grid-template-columns: 1fr 1fr 1fr .1fr;
     gap: 1em;
     position: sticky;
-    top: 0;
+    top: 13px;
+    overflow: hidden;
     z-index: 5;
     margin: 15px 15px 40px 15px;
 }
@@ -574,6 +575,7 @@ li::before {
     z-index: 1;
 
     padding: 2em .5em;
+    
 
 }
 
@@ -586,8 +588,8 @@ li::before {
 
     text-align: start;
     font-size: 1em;
-    padding: 0em 2em 4em 3.5em;
-
+    padding: 0em 2em 4em 2.5em;
+    line-height: 1.7em;
     align-self: start;
     justify-self: center;
 
@@ -612,7 +614,7 @@ li::before {
     background-color: var(--bright-green);
 
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 
     z-index: 1;
 
@@ -897,10 +899,15 @@ li::before {
 }
 
 @media (min-width: 600px) {
-    header.campus img  {
+    .header-campus img  {
     width: 80%;
+    height: 30em;
     }
 }
+
+
+
+
 
 /* HIER BEGINT DE CAMPUS */
 
@@ -995,7 +1002,7 @@ span.buttons-nav{
 }
 
 .header-campus h1 {
-    font-size: 3em;
+    /* font-size: 3em; */
     font-weight: 800;
     padding-bottom: 0.7em;
     color: #ffffff;
@@ -1003,7 +1010,7 @@ span.buttons-nav{
 
 .header-campus p {
     line-height: 1.8em;
-    width: 80vw;
+    /* width: 80vw; */
     /* margin: auto; */
     /* position: relative; */
     z-index: 1;
@@ -1012,11 +1019,12 @@ span.buttons-nav{
 }
 
 .header-campus img {
-    width: 100vw;
-    height: 20em;
+    /* width: 80vw; */
+    height: 25em;
     object-fit: cover;
     z-index: 1;
     align-self: center;
+    border-radius: 15px 15px 0px 0px;
 }
 
 /* Vormgeving en positionering campus elementen */
@@ -1097,6 +1105,7 @@ footer{
     text-align: center;
     width: 100%;
     height: 200px;
+    border-radius: 10px 10px 10px 10px;
  }
  /* footer logo */
  footer a > img {
