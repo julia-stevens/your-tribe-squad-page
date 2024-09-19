@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>squadpages groep de eendtjes</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" >
+
+
+
+  
 
 
 </head>
@@ -21,11 +21,11 @@
 <body>
     <!-- Navigatie met 2 links naar een pagina -->
     <nav>
-        <a class="hva-logo" href="julia.html"><img src="./assets/julia/hva-logo.png" alt="logo van hva"></a>
+        <a class="hva-logo" href="index.html"><img src="./assets/julia/hva-logo.png" alt="logo van hva"></a>
         <span class="buttons-nav">
-            <a class="button-studenten" href="julia.html"><img src="./assets/julia/svg-icons/studenten.svg"
+            <a class="button-studenten" href="index.html"><img src="./assets/julia/svg-icons/studenten.svg"
                     alt="icoon van groep studenten">Studenten</a>
-            <a class="button-campus" href="#"><img src="./assets/julia/svg-icons/campus.svg"
+            <a class="button-campus" href="campus.html"><img src="./assets/julia/svg-icons/campus.svg"
                     alt="icoon van school gebouw">Campus</a>
         </span>
     </nav>
@@ -36,10 +36,10 @@
         <p>Welkom bij de pagina van squad 1G! Op deze pagina leer je de studenten en de campus beter kennen. Klik op een
             student om het gemaakte visitekaartje te bekijken of kijk rond op onze campus!</p>
         <div class="buttons-banner">
-            <a class="squad" href="#card-content">Studenten squad G1<img src="assets/arrow-down-squadpage.svg"
-                    alt=""></a>
-            <a class="campus" href="amber-campus.html">Favoriete plekken campus<img src="assets/arrow-right-squad.svg"
-                    alt=""></a>
+            <a class="squad" href="#myInput">Studenten squad 1G<img src="./assets/arrow-down-squadpage.svg"
+                    alt="pijl naar beneden"></a>
+            <a class="campus" href="campus.html">Favoriete plekken campus<img src="./assets/arrow-right-squad.svg"
+                    alt="pijl naar rechts"></a>
         </div>
         <img class="banner-image" src="./assets/julia/squad-image.png"
             alt="vector illustratie van een groep die les krijgt en achter hun laptop zit">
@@ -50,428 +50,313 @@
 
         <ul id="myUL">
             <!-- card amber -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Amber Schalker</h3>
                 <img src="./assets/mugshots/squad1g-amber.jpg" alt="afbeelding van Amber">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Nieuwegein</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://ambersr.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>21 jaar</p>
+                <p>Nieuwegein</p>
+                <p>Minimalism is an appreciation of space</p>
+                <a href="https://ambersr.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card athene -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Athene Guanipa</h3>
                 <img src="./assets/mugshots/squad1g-athene.jpg" alt="afbeelding van Athene">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>21 jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Athene</p>
+                <a href="https://nyathene.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card branco -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Branco van Beek</h3>
                 <img src="./assets/mugshots/squad1g-branco.jpg" alt="afbeelding van Branco">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">18 jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Volendam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>18 jaar</p>
+                <p>Volendam</p>
+                <p>You never know what you have until it's gone</p>
+                <a href="https://brancovanbeek.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card cedrik -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Cedrik Wouters</h3>
                 <img src="./assets/mugshots/squad1g-cedrik.jpg" alt="afbeelding van Cedrik">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Cedrik</p>
+                <a href="https://cedrikstephen.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card christian -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Christian Osa-Oni</h3>
                 <img src="./assets/mugshots/squad1g-christian.jpg" alt="afbeelding van Christian">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hiet het motto van Christian</p>
+                <a href="https://osaoni.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card clarice -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Clarice Boerlijst</h3>
                 <img src="./assets/mugshots/squad1g-clarice.jpg" alt="afbeelding van Clarice">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">20 jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>20 jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Clarice</p>
+                <a href="https://clarice-cod.github.io/visitekaartje-clarice/"></a>
             </li>
 
             <!-- card colin -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Colin de Groot</h3>
                 <img src="./assets/mugshots/squad1g-colin.jpg" alt="afbeelding van Colin">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
-            </li>
-
-            <!-- card dylan -->
-            <li class="student-card border-card">
-                <h3>Dylan van Nierop</h3>
-                <img src="./assets/mugshots/squad1g-dylan.jpg" alt="afbeelding van Dylan">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
-            </li>
-
-            <!-- card fatima -->
-            <li class="student-card border-card">
-                <h3>Fatima El Ayadi</h3>
-                <img src="./assets/mugshots/squad1g-fatima-A.jpg" alt="afbeelding van Fatima El Ayadi">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
-            </li>
-
-            <!-- card fatima -->
-            <li class="student-card border-card">
-                <h3>Fatima El Hilali</h3>
-                <img src="./assets//julia/fatima1-picture.jpg" alt="afbeelding van fatima">
                 <p>xx jaar</p>
                 <p>Amsterdam</p>
-                <p>Hier het motto van Fatima</p>
-                <a href="https://fatimahilali.github.io/visitekaartje/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>Hier het motto van Colin</p>
+                <a href="https://colindegroot.github.io/your-tribe-profile-card/"></a>
+            </li>
+            
+            <!-- card dylan -->
+            <li class="student-card border-card" data-tilt>
+                <h3>Dylan van Nierop</h3>
+                <img src="./assets/mugshots/squad1g-dylan.jpg" alt="afbeelding van Dylan">
+                <p>xx jaar</p>
+                <p>Gouda</p>
+                <p>Ik kom soms mezelf tegen, dat is best gezellig</p>
+                <a href="https://divaninl.github.io/your-tribe-profile-card/"></a>
+            </li>
+
+            <!-- card fatima -->
+            <li class="student-card border-card" data-tilt>
+                <h3>Fatima El Ayadi</h3>
+                <img src="./assets/mugshots/squad1g-fatima-A.jpg" alt="afbeelding van Fatima El Ayadi">
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>You are the greatest project you'll ever work on. Restart. Reset. Refocus. As many times as you need.</p>
+                <a href="https://fatimazelay.github.io/your-tribe-profile-card/"></a>
+            </li>
+
+            <!-- card fatima -->
+            <li class="student-card border-card rotate" data-tilt> 
+                <h3>Fatima El Hilali</h3>
+                <img class="rotate" src="./assets/Squad1G-Fatima-H.JPG" alt="afbeelding van fatima">
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Believe you can and you're halfway there</p>
+                <a href="https://fatimahilali.github.io/visitekaartje/"></a>
             </li>
 
             <!-- card halima -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Halima Dinle</h3>
                 <img src="./assets/mugshots/squad1g-halima.jpg" alt="afbeelding van Halima">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Halima</p>
+                <a href="https://halima98.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card haroub -->
-            <li class="student-card border-card">
-                <h3>Haroub</h3>
-                <img src="./assets//julia/halima-picture.png" alt="afbeelding van haroub">
+            <li class="student-card border-card rotate" data-tilt>
+                <h3>Haroub Said</h3>
+                <img src="./assets/Squad1G-Haroub.JPG" alt="afbeelding van haroub">
                 <p>22 jaar</p>
                 <p>Amsterdam</p>
                 <p>Hier het motto van Haroub</p>
-                <a href="https://haroub-s.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <a href="https://haroub-s.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card iris -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Iris van Willigen</h3>
                 <img src="./assets/mugshots/squad1g-iris.jpg" alt="afbeelding van Iris">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Iris</p>
+                <a href="https://irisvw.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card joost -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Joost Hubregtse</h3>
                 <img src="./assets/mugshots/squad1g-joost.jpg" alt="afbeelding van Joost">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Joost</p>
+                <a href="https://hubregtsejoost.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card jordy -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Jordy van Wetering</h3>
                 <img src="./assets/mugshots/squad1g-jordy.jpg" alt="afbeelding van Jordy">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Jordy</p>
+                <a href="https://noxinput.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card jules -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Jules Bruins</h3>
                 <img src="./assets/mugshots/squad1g-jules.jpg" alt="afbeelding van Jules">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">18 jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Apeldoorn</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>18 jaar</p>
+                <p>Apeldoorn</p>
+                <p>Hier het motto van Jules</p>
+                <a href="https://julesbruins.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card julia -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Julia Stevens</h3>
                 <img src="./assets/mugshots/squad1g-julia.jpg" alt="afbeelding van Julia">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">21 jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Rhenen</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>21 jaar</p>
+                <p>Rhenen</p>
+                <p>Het belangrijkste eerst</p>
+                <a href="https://julia-stevens.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card karima -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Karima Mouadi</h3>
                 <img src="./assets/mugshots/squad1g-karima.jpg" alt="afbeelding van Karima">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Sommige woorden zeggen niets en sommige stiltes zeggen alles</p>
+                <a href="https://karima002.github.io/visitekaartje-karima/"></a>
             </li>
 
             <!-- card kim -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Kim Nikita Schijf</h3>
                 <img src="./assets/mugshots/squad1g-kim.jpg" alt="afbeelding van Kim">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Kim</p>
+                <a href="https://kimnikitaschijf.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card luc -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Luc Hoogerwerf</h3>
                 <img src="./assets/mugshots/squad1g-luc.jpg" alt="afbeelding van Luc">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Een echte gladiator drinkt zijn klok van de radiator</p>
+                <a href="https://debosos.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card marcin -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Marcin Magdziak</h3>
                 <img src="./assets/mugshots/squad1g-marcin.jpg" alt="afbeelding van Marcin">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Rotterdam</p>
+                <p>I want to be unique! Just like everyone else</p>
+                <a href="https://marsgotbars.github.io/vite-card/"></a>
             </li>
 
             <!-- card matthijs -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Matthijs Ten Brink</h3>
                 <img src="./assets/mugshots/squad1g-Matthijs.jpg" alt="afbeelding van Mattijs">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Matthijs</p>
+                <a href="https://github.com/Matthijs217"></a>
             </li>
 
             <!-- card nadia -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Nadia Visser</h3>
                 <img src="./assets/mugshots/squad1g-nadia.jpg" alt="afbeelding van Nadia">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>21 jaar</p>
+                <p>Purmerend</p>
+                <p>Hier het motto van Nadia</p>
+                <a href="https://nadiachaja.github.io/your-tribe-profile-card/"></a>
 
                 <!-- card nas -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Nas Ibrahim</h3>
                 <img src="./assets/mugshots/squad1g-nas.jpg" alt="afbeelding van Nas">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Nas</p>
+                <a href="https://nmiaa.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card ole -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Ole Franssen</h3>
                 <img src="./assets/mugshots/squad1g-ole.jpg" alt="afbeelding van Ole">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Geen goeroe, alleen hard werk</p>
+                <a href="https://ofrqq.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card ravi -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Ravi Tjikhoeri</h3>
                 <img src="./assets/mugshots/squad1g-ravi.jpg" alt="afbeelding van Ravi">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Ravi</p>
+                <a href="https://ravirkt.github.io/visitekaartje/"></a>
             </li>
 
 
             <!-- card robby -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Robby Risse</h3>
                 <img src="./assets/mugshots/squad1g-robby.jpg" alt="afbeelding van Robby">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>I never sleep, cause sleep is the cousin of death</p>
+                <a href="https://robbyrisse.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card robin -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Robin Wouterson</h3>
                 <img src="./assets/mugshots/squad1g-robin.jpg" alt="afbeelding van Robin">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Robin</p>
+                <a href="https://robinwouterson.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card saif -->
-            <li class="student-card border-card">
+            <li class="student-card border-card rotate" data-tilt>
                 <h3>Saif</h3>
-                <img src="./assets//julia/saif-picture.jpeg" alt="afbeelding van robin">
+                <img src="./assets/cherry-logo.jpg" alt="afbeelding van saif">
                 <p>xx jaar</p>
                 <p>Amsterdam</p>
                 <p>Hier het motto van Saif</p>
-                <a href="https://robinwouterson.github.io/your-tribe-profile-card/"><img
-                        src="https://saif8599.github.io/your-tribe-profile-card/" alt="pijl naar rechts"></a>
+                <a href="https://saif8599.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card ties -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Ties Beeftink</h3>
                 <img src="./assets/mugshots/squad1g-ties.jpg" alt="afbeelding van Ties">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Hier het motto van Ties</p>
+                <a href="https://ties7.github.io/your-tribe-profile-card/"></a>
             </li>
 
             <!-- card viresh -->
-            <li class="student-card border-card">
+            <li class="student-card border-card" data-tilt>
                 <h3>Viresh</h3>
                 <img src="./assets/mugshots/squad1g-viresh.jpg" alt="afbeelding van Viresh">
-                <span class="info">
-                    <p><img class="icon-age" src="assets/age-icon.svg" alt="">xx jaar</p>
-                    <p><img class="icon-map" src="assets/map-icon.svg" alt="">Amsterdam</p>
-                </span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit volutpat montes ut, nulla purus id
-                    nascetur.</p>
-                <a href="https://nyathene.github.io/your-tribe-profile-card/"><img
-                        src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                <p>xx jaar</p>
+                <p>Amsterdam</p>
+                <p>Ik leer uit de fouten van mensen die naar mijn advies luisteren</p>
+                <a href="https://vsheo.github.io/your-tribe-profile-card/"></a>
             </li>
         </ul>
 
@@ -491,8 +376,7 @@
                         <p class="slider-content-tekst">De Bibliotheek van het Wibauthuis heeft studieplekken aan
                             leestafels, werkplekken met wifi en samenwerkplekken. Je kan het vinden op de eerste en
                             tweede etage. </p>
-                        <a href="https://www.hva.nl/locaties/bibliotheeklocaties/wibauthuis-bibliotheek.html"><img
-                                src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                        <a class="arrow-campus-card" href="https://www.hva.nl/locaties/bibliotheeklocaties/wibauthuis-bibliotheek.html"></a>
                     </li>
 
                     <!-- ITEM 2 -->
@@ -504,8 +388,7 @@
                             uitzicht? Dat kan! Pak een kop koppfie, neem de lift (of trap) naar de dertiende verdieping
                             van het Jakoba Mulderhuis en kijk uit over Amsterdam. </p>
                         <a
-                            href="https://www.hva.nl/amstelcampus/de-amstelcampus/gebouwen/jakoba-mulderhuis/jakoba-mulderhuis.html"><img
-                                src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                            href="https://www.hva.nl/amstelcampus/de-amstelcampus/gebouwen/jakoba-mulderhuis/jakoba-mulderhuis.html"></a>
                     </li>
 
                     <!-- ITEM 3 -->
@@ -517,8 +400,7 @@
                         <p class="slider-content-tekst">Ook een kleine supermarkt ontbreekt niet op de campus. Spar
                             University is een supermarktconcept speciaal gericht op studenten met een grab&go
                             assortiment en leuke aanbiedingen, deals en acties. </p>
-                        <a href="https://www.spar.nl/winkels/spar-university-hva-amsterdam-451/"><img
-                                src="./assets/julia/svg-icons/arrow-right.svg" alt="pijl naar rechts"></a>
+                        <a href="https://www.spar.nl/winkels/spar-university-hva-amsterdam-451/"></a>
                     </li>
 
                     <!-- ITEM 4 -->
@@ -529,8 +411,7 @@
                         <p class="slider-content-tekst">Je kunt hier gebruik maken van gratis WiFi, maar ook het
                             beamerscherm reserveren om bijvoorbeeld te vergaderen. De menukaart is zowel op ochtend,
                             middag als avond ingericht. Daarnaast biedt het café ook verschillende activiteiten. </p>
-                        <a href="https://cafefest.nl/"><img src="./assets/julia/svg-icons/arrow-right.svg"
-                                alt="pijl naar rechts"></a>
+                        <a href="https://cafefest.nl/"></a>
                     </li>
 
                     <!-- ITEM 5 -->
@@ -540,96 +421,29 @@
                         <h4>FLOOR: debat- en activiteitencentrum</h4>
                         <p class="slider-content-tekst">Regelmatig worden hier leuke evenementen georganiseerd voor
                             uiteenlopende doelgroepen, en altijd gratis. </p>
-                        <a href="https://www.hva.nl/floor"><img src="./assets/julia/svg-icons/arrow-right.svg"
-                                alt="pijl naar rechts"></a>
+                        <a href="https://www.hva.nl/floor"></a>
                     </li>
                 </ul>
 
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-
-            <a href="campus.html">Bekijk all campus spots<img src="./assets/julia/svg-icons/arrow-right.svg"
-                    alt="icoon pijl naar rechts"</a></article><section class="campus-listing-grid">
-                <div class="carousel-container">
-                    <ul class="carousel-list">
-                        <li>
-                            <span>Wibautstraat 3b</span>
-                            <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis">
-                            <h3>Wibauthios</h3>
-                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus
-                                id nascetur.</p>
-                            <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
-                        </li>
-                        <li>
-                            <span>Wibautstraat 3b</span>
-                            <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis">
-                            <h3>Wibauthios</h3>
-                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus
-                                id nascetur.</p>
-                            <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
-                        </li>
-                        <li>
-                            <span>Wibautstraat 3b</span>
-                            <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis">
-                            <h3>Wibauthios</h3>
-                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus
-                                id nascetur.</p>
-                            <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
-                        </li>
-                        <li>
-                            <span>Wibautstraat 3b</span>
-                            <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis">
-                            <h3>Wibauthios</h3>
-                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla purus
-                                id nascetur.</p>
-                            <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
-                        </li>
-                        <li>
-                            <span>Wibautstraat 3b</span>
-                            <img src="assets/wibaut-bibliotheek.jpg" alt="Wibauthuis">
-                            <h3>Wibauthios</h3>
-                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit volutpat montes ut, nulla
-                                purus
-                                id nascetur.</p>
-                            <a href="#"><img src="assets/arrow-right-squad.svg" alt="icon arrow right"></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Carousel Navigation -->
-                <button class="carousel-prev">&#10094;</button>
-                <button class="carousel-next">&#10095;</button>
-                </section>
-                </section>
+        </article>
     </main>
+
+    <img id="duck" src="./assets/duck-you.png" alt="duck">
 
     <!-- FOOTER -->
     <footer>
-        <img src="assets/logo hva.png" alt="logo">
-            <p>Copyright: Amber, Clarice & Julia</p>
-            <img src="assets/duck.png" alt="duck">
+        <a href="index.html"><img src="./assets/logo-hva.png" alt="logo"></a>
+        <p>Copyright: Amber, Clarice & Julia</p>
     </footer>
 
 
 
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="scripts/script.js"></script>
-
-
-
-
-
-
-
-
-
+    <script src="scripts/vanilla-tilt.js"></script>   
 
 </body>
 
