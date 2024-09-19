@@ -16,19 +16,17 @@ function myFunction() {
     }
 }
 
-
+// knop voor eend
 const duck = document.querySelector("#duck")
 duck.addEventListener("click", function() {
     duck.classList.toggle("active")    
 });
 
-
+// swiper voor slider van campus cards
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-    spaceBetween: 100,
-    centeredSlides: true,
-    
+    spaceBetween: 100,  
   
     // Navigation arrows
     navigation: {
@@ -51,4 +49,3 @@ const swiper = new Swiper('.swiper', {
 
   });
 
-  
