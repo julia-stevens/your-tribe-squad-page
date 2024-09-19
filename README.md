@@ -16,17 +16,25 @@ Bezoek hier onze squad page: https://edu.nl/jqqnw
 Wij hebben de huisstijl van de FDND websites terug gebracht naar onze squad page, in zowel kleur als elementen, zoals de cards met studenten. Zie onderstaande foto's voor een sfeerbeeld: 
 
 ### Mobile
-* <img src="https://github.com/user-attachments/assets/64f6a4d1-3558-4a6d-816b-c2c0e68225e7" width=200px>
-* <img src="https://github.com/user-attachments/assets/272a4a6c-c225-4b52-b5dc-15981bf91aed" width=200px>
-* <img src="https://github.com/user-attachments/assets/21716cd3-0920-4b0e-9965-18a9bf61be55" width=200px>
-* <img src="https://github.com/user-attachments/assets/c307d4a4-3005-43b6-b72b-472fbc2fb1ca" width=200px>
-* <img src="https://github.com/user-attachments/assets/5e38487c-3949-4afc-bfb9-032fbc436076" width=200px>
+<img src="https://github.com/user-attachments/assets/64f6a4d1-3558-4a6d-816b-c2c0e68225e7" width=200px>
+<img src="https://github.com/user-attachments/assets/272a4a6c-c225-4b52-b5dc-15981bf91aed" width=200px>
+<img src="https://github.com/user-attachments/assets/21716cd3-0920-4b0e-9965-18a9bf61be55" width=200px>
+ <br> 
+<img src="https://github.com/user-attachments/assets/c307d4a4-3005-43b6-b72b-472fbc2fb1ca" width=200px>
+ <img src="https://github.com/user-attachments/assets/5e38487c-3949-4afc-bfb9-032fbc436076" width=200px>
+
+### Tablet
+<img width="300" alt="Scherm­afbeelding 2024-09-19 om 19 15 46" src="https://github.com/user-attachments/assets/b224e362-2508-451a-a0ad-e9c561261b57">
+<img width="300" alt="Scherm­afbeelding 2024-09-19 om 19 16 23" src="https://github.com/user-attachments/assets/38102337-5e0b-4605-aeca-1a9b0a4d6b58">
+<img width="300" alt="Scherm­afbeelding 2024-09-19 om 19 17 15" src="https://github.com/user-attachments/assets/f0999775-c809-4da5-9ff1-20647fae5fd1">
+<img width="300" alt="Scherm­afbeelding 2024-09-19 om 19 17 02" src="https://github.com/user-attachments/assets/776c31b6-3ad7-4bfb-83d2-35973d59f30b">
+<img width="300" alt="Scherm­afbeelding 2024-09-19 om 19 16 46" src="https://github.com/user-attachments/assets/757e0764-d5b5-4c29-aa52-30a79b439dad">
 
 ### Desktop
-* <img width="400" alt="image" src="https://github.com/user-attachments/assets/aa6b8ec0-179e-474e-9452-c007772bf1a9">
-* <img width="400" alt="image" src="https://github.com/user-attachments/assets/9204ead7-303c-41a1-8dee-470f3dd99c0a">
-* <img width="400" alt="image" src="https://github.com/user-attachments/assets/f7f838ce-034c-4bb5-b912-588f3931a161">
-* <img width="400" alt="image" src="https://github.com/user-attachments/assets/48df17c6-c096-4eff-b7a2-8e072f63e4e6">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/aa6b8ec0-179e-474e-9452-c007772bf1a9">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/9204ead7-303c-41a1-8dee-470f3dd99c0a">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/f7f838ce-034c-4bb5-b912-588f3931a161">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/48df17c6-c096-4eff-b7a2-8e072f63e4e6">
 
 
 ### Waar zijn wij trots op? 
