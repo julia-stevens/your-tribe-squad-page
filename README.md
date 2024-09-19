@@ -4,11 +4,17 @@
 Wij zijn de Eendtjes: Julia, Clarice en Amber. In sprint 1 hebben we samengewerkt aan het ontwerpen en ontwikkelen van een squad page voor squad G1. Dit hebben we gedaan volgens het design en ontwikkel stappenplan. Na analyse en inspiratie hebben we individueel geschetst en onze ideeën samengevoegd tot één ontwerp. Dit hebben we gebouwd met HTML, CSS en JS. 
 <br>
 Wij zijn benieuwd wat jullie ervan vinden!
+<br>
+Bezoek hier onze squad page: https://edu.nl/jqqnw
 
 ## Inhoudsopgave
+* [Onze squad page](#onze-squad-page)
 * [Wie zijn wij](#wie-zijn-wij)
 * [Onze aanpak](#onze-aanpak)
-* [Onze squad page](#onze-squad-page)
+
+## Onze squad page
+Wij zijn heel benieuwd wat jullie ervan vinden!
+
 
 ## Wie zijn wij
 Wij zijn de Eendtjes: Julia, Amber en Clarice. Wij zijn eerstejaars studenten aan de opleiding Frontend Design & Development. We stellen ons even individueel voor:
@@ -31,10 +37,6 @@ Julia, Amber en Clarice
 ## Onze aanpak
 Tijdens de eerste sprint hebben we de taak gekregen om samen een squad page te ontwerpen en realiseren. Ons proces volgde de designcyclus, waarbij we begonnen met de analysefase. We hebben een repository opgezet en een teamcanvas aangemaakt om onze samenwerking te structureren. Na het verzamelen van inspiratie en het bespreken van onze persoonlijke stijlen en voorkeuren, zijn we individueel gaan schetsen en ontwerpen. Deze ideeën hebben we vervolgens samengevoegd tot één gezamenlijk ontwerp. Dit ontwerp hebben we ontwikkeld met behulp van HTML, CSS en JavaScript, waarbij we extra aandacht hebben besteed aan responsive design.
 	
-## Onze squad page
-Wij zijn heel benieuwd wat jullie ervan vinden!
-
-
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
