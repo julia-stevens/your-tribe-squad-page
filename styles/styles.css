@@ -58,6 +58,8 @@ span.buttons-nav {
     height: 80%;
     gap: 10px;
     display: flex;
+
+
 }
 
 
@@ -82,6 +84,9 @@ nav a.button-studenten {
     font-size: 1.8em;
     align-items: center;
     margin-left: 0em;
+
+    transition: .3s ease;
+
 }
 
 /* Vormgeving link campus */
@@ -97,6 +102,9 @@ nav a.button-campus {
     padding: 0.7em 1em 0.7em 1em;
     font-size: 1.8em;
     align-items: center;
+
+    transition: .3s ease;
+
 }
 
 span.buttons-nav{
@@ -167,6 +175,9 @@ a.squad {
   color: #050542; 
   text-decoration: none;
   gap: 10px;
+
+  transition: .3s ease;
+
 }
 
 a.squad img {
@@ -190,7 +201,34 @@ a.campus {
   color: #050542; 
   text-decoration: none;
   gap: 10px;
+
+ position: relative; 
+ outline: none; 
 }
+
+a.campus::after {
+    content: "";
+    position: absolute; 
+    top: 100%; 
+    left: 0%; 
+    right: 0%; 
+    height: .1em;
+    background-color: var(--dark-blue);
+    scale: 0 1; 
+    transform-origin: right; 
+    transition: scale .3s; 
+}
+
+a.campus:hover::after {
+    scale: 1 1; 
+    transform-origin: left; 
+}
+
+
+
+
+
+
 
 a.campus img {
   width: 15px;
@@ -345,7 +383,10 @@ li>a {
     width: 2.5em;
     height: 2.5em;
 
-    text-align: center
+    text-align: center;
+
+    transition: .3s ease;
+
 }
 
 /* Vormgeving leeftijd + icoon */
@@ -419,6 +460,9 @@ li>a {
     background-position: left .6em bottom .5em;
     backdrop-filter: invert(5%) sepia(53%) saturate(6239%) hue-rotate(219deg) brightness(91%) contrast(103%);
     background-size: 1.3em;
+
+    transition: .3s ease;
+
 }
 
 
@@ -672,10 +716,12 @@ li::before {
 
 .swiper-button-next:after {
     font-size: 1.5em;
+    transition: .3s ease;
 }
 
 .swiper-button-prev:after {
     font-size: 1.5em;
+    transition: .3s ease;
 }
 
 .swiper-wrapper {
@@ -1205,5 +1251,13 @@ footer{
     background-color: var(--main-white);
 
     padding-bottom: 2em;
+}
+
+a.button-studenten:hover, li>a:hover {
+    box-shadow: -3px 3px #0f906a;
+}
+
+a.button-campus:hover, a.squad:hover {
+    box-shadow: -3px 3px #6937ba;
 }
 
