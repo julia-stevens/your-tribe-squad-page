@@ -267,6 +267,7 @@ a.campus {
     outline: none;
 }
 
+/* hover animatie en vormgeving campus link */
 a.campus::after {
     content: "";
     position: absolute;
