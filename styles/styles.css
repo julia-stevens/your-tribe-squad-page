@@ -443,7 +443,7 @@ li>a {
     transition: .3s ease;
 
 }
-
+/* eerste tag (p) op de studenten card met een icoon als achtergrond image */
 .student-card p:nth-of-type(1) {
     background-color: var(--bright-green);
 
